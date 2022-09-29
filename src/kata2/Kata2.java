@@ -7,13 +7,13 @@ public class Kata2 {
 
     public static void main(String[] args) {
 
-        Integer [] data = {1,2,3,4,1,2,4,6,7,8,2, 8, 6, 6, 7};
+        String [] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
         HistogramGenerator histo = new HistogramGenerator(data);
-        Map<Integer, Integer> histogr = histo.getHistogram();
+        Map<String, Integer> histogr = histo.getHistogram();
         
 
         
-        for(Map.Entry<Integer, Integer> entry: histogr.entrySet()){
+        for(Map.Entry<String, Integer> entry: histogr.entrySet()){
             System.out.println(entry.getKey() + " ==> " + entry.getValue());
         }
         
